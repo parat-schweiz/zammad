@@ -101,6 +101,11 @@ App.Config.set('auth_provider_all', {
     name:   __('Weibo')
     config: 'auth_weibo'
     class:  'weibo'
+  weibo:
+    url:    '/auth/oauth2'
+    name:   __('Quaestur')
+    config: 'auth_oauth2'
+    class:  'oauth2'
   saml:
     url:    '/auth/saml'
     name:   __('SAML')

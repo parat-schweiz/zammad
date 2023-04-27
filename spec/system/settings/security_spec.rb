@@ -182,5 +182,14 @@ RSpec.describe 'Manage > Settings > Security', type: :system do
       include_examples 'for third-party applications settings'
       include_examples 'Display callback urls for third-party applications #3622'
     end
+
+    describe 'Authentication via Quaestur' do
+      let(:app_name) { 'Quaestur' }
+      let(:app_setting) { 'auth_oauth2' }
+
+      include_examples 'for third-party applications button in login page'
+      include_examples 'for third-party applications settings'
+      include_examples 'Display callback urls for third-party applications #3622'
+    end
   end
 end

@@ -61,6 +61,12 @@ export const useThirdPartyAuthentication = () => {
         url: '/auth/weibo',
       },
       {
+        name: i18n.t('Quaestur'),
+        enabled: !!config.value.auth_oauth2,
+        icon: 'oauth2',
+        url: '/auth/oauth2',
+      },
+      {
         name:
           (config.value['auth_saml_credentials.display_name'] as string) ||
           i18n.t('SAML'),

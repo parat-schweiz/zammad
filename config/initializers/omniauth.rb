@@ -50,6 +50,15 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 
   # SAML database connect
   provider :saml_database
+
+  # Quaestur
+  provider :oauth2_database, 'not_change_will_be_set_by_database', 'not_change_will_be_set_by_database', {
+    client_options: {
+      authorize_url: '/oauth2/authorize',
+      token_url:     '/oauth2/token',
+      site:          'https://quaestur.parat.swiss',
+    }
+  }
 end
 
 # This fixes issue #1642 and is required for setups in which Zammad is used
