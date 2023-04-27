@@ -3672,6 +3672,10 @@ ol.tabs li {
     background: hsl(0, 0%, 27%);
   }
 
+  &.auth-provider--oauth2 {
+    background: hsl(0, 0%, 27%);
+  }
+
   &.auth-provider--saml {
     background: hsl(0, 0%, 27%);
   }
