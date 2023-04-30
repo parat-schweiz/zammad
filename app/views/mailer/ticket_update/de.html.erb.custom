@@ -1,0 +1,11 @@
+[unencrypted]Aktualisiertes Ticket 
+
+<div>Hallo #{recipient.fullname},</div>
+<br>
+<div>
+das Ticket wurde von "<b>#{current_user.longname}</b>" aktualisiert.
+</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}<% if @objects[:article] %>/#{article.id}<% end %>" target="zammad_app">In #{config.product_name} anzeigen</a>
+</div>

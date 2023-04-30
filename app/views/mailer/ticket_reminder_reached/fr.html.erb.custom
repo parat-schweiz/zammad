@@ -1,0 +1,9 @@
+Rappel atteint
+
+<div>Bonjour #{recipient.firstname},</div>
+<br>
+<div>Un ticket nécessite une attention, un rappel a été atteint pour ticket avec le client "<b>#{ticket.customer.longname}</b>".</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

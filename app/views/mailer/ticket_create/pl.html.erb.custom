@@ -1,0 +1,15 @@
+Nowe zgłoszenie
+
+<div>Cześć #{recipient.firstname},</div>
+<br>
+<div>Otrzymałeś nowe zgłoszenie od "<b>#{current_user.longname}</b>".</div>
+<br>
+<div>
+Grupa: #{ticket.group.name}<br>
+Właściciel: #{ticket.owner.fullname}<br>
+Status: #{t(ticket.state.name)}<br>
+</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">Zobacz w #{config.product_name}</a>
+</div>

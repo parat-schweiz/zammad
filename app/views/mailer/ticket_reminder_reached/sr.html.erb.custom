@@ -1,0 +1,9 @@
+Достигнуто време чекања тикета
+
+<div>Здраво #{recipient.firstname},</div>
+<br>
+<div>Тикет тражи вашу пажњу: достигнуто време чекања тикета за са клијентом „<b>#{ticket.customer.longname}</b>”.</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">Погледај у #{config.product_name}</a>
+</div>

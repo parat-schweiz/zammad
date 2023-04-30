@@ -1,0 +1,11 @@
+Тикет обновлен
+
+<div>Здравствуйте #{recipient.firstname},</div>
+<br>
+<div>
+Тикет был обновлен "<b>#{current_user.longname}</b>".
+</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}<% if @objects[:article] %>/#{article.id}<% end %>" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

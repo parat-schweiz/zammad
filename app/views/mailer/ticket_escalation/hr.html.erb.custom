@@ -1,0 +1,9 @@
+Eskalirani ticket
+
+<div>Bok #{recipient.firstname},</div>
+<br>
+<div>Ticket od „<b>#{ticket.customer.longname}</b>” je eskalirao od „#{ticket.escalation_at}”!</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">Pogledaj u #{config.product_name}</a>
+</div>

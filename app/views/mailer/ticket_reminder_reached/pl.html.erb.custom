@@ -1,0 +1,9 @@
+Przypomnienie o zgłoszeniu
+
+<div>Cześć #{recipient.firstname},</div>
+<br>
+<div>Zgłoszenie od "<b>#{ticket.customer.longname}</b>" wymaga Twojej uwagi.</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app"> Zobacz w #{config.product_name}</a>
+</div>
