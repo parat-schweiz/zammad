@@ -1,0 +1,15 @@
+[unencrypted]Neues Ticket in #{ticket.group.name}
+
+<div>Hallo #{recipient.fullname},</div>
+<br>
+<div>ein neues Ticket wurde von "<b>#{current_user.longname}</b>" erstellt.</div>
+<br>
+<div>
+Gruppe: #{ticket.group.name}<br>
+Besitzer: #{ticket.owner.fullname}<br>
+Status: #{t(ticket.state.name)}<br>
+</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">In #{config.product_name} anzeigen</a>
+</div>

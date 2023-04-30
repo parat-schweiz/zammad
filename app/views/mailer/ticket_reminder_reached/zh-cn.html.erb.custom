@@ -1,0 +1,9 @@
+有关 的工单提醒
+
+<div>您好, #{recipient.firstname}:</div>
+<br>
+<div>客户 "<b>#{ticket.customer.longname}</b>" 的工单 到达提醒时间, 需要您留意了.</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

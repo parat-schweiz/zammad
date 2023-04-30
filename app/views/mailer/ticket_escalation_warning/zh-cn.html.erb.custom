@@ -1,0 +1,9 @@
+工单 即将升级
+
+<div>您好 #{recipient.firstname},</div>
+<br>
+<div>来自客户 "<b>#{ticket.customer.longname}</b>" 的工单主题为 即将在 "#{ticket.escalation_at}" 开始升级!</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

@@ -1,0 +1,9 @@
+Le ticket va escalader
+
+<div>Bonjour #{recipient.firstname},</div>
+<br>
+<div>Le ticket de "<b>#{ticket.customer.longname}</b>" escaladera "#{ticket.escalation_at}" !</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

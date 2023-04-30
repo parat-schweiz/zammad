@@ -1,9 +1,9 @@
-[unencrypted]Ticket wurde zu einem anderen Ticket zusammengefasst
+[unencrypted]Ein anderes Ticket wurde zusammengefasst zu Ticket
 
 <div>Hallo #{recipient.fullname},</div>
 <br>
 <div>
-das Ticket (#{ticket.title}) wurde zu einem anderen Ticket zusammengefasst von "<b>#{current_user.longname}</b>".
+ein anderes Ticket wurde zusammengefasst zu Ticket von "<b>#{current_user.longname}</b>".
 </div>
 <br>
 <div>

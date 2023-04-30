@@ -1,0 +1,9 @@
+A jegy eszkalálódik
+
+<div>Üdvözöljük #{recipient.firstname},</div>
+<br>
+<div>A "<b>#{ticket.customer.longname}</b>" ügyféltől származó jegy eszkalálódni fog a következő időpontban: "#{ticket.escalation_at}"!</div>
+<br>
+<div>
+   <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app" >Tekintse meg itt: #{config.product_name}</a> 
+</div>

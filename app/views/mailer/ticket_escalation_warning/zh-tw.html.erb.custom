@@ -1,0 +1,9 @@
+工單 即將升級
+
+<div>Hi #{recipient.firstname},</div>
+<br>
+<div>來自客戶 "<b>#{ticket.customer.longname}</b>" 的工單標題為 即將在 "#{ticket.escalation_at}" 開始升級!</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

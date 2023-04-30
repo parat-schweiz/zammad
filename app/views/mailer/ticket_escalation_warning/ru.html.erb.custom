@@ -1,0 +1,9 @@
+Заявка пройдет эскалацию
+
+<div>Здравствуйте, #{recipient.firstname}.</div>
+<br>
+<div>Заявка от "<b>#{ticket.customer.longname}</b>" пройдет эскалацию с "#{ticket.escalation_at}"!</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">Посмотреть это в #{config.product_name}</a>
+</div>

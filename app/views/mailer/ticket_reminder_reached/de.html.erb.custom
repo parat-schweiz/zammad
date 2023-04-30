@@ -1,0 +1,9 @@
+[unencrypted]Ticket-Erinnerung erreicht
+
+<div>Hallo #{recipient.fullname},</div>
+<br>
+<div>dieses Ticket benötigt Ihre Aufmerksamkeit: Warten auf Erinerung für das Ticket mit dem Kunden "<b>#{ticket.customer.longname}</b>" ist erreicht.</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">In #{config.product_name} anzeigen</a>
+</div>

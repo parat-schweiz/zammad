@@ -1,0 +1,9 @@
+Il ticket si è intensificato
+
+<div>Buongiorno #{recipient.firstname},</div>
+<br>
+<div>Un ticket da "<b>#{ticket.customer.longname}</b>" è andato in escalation il "#{ticket.escalation_at}"!</div>.
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">#{t('View this in Zammad')}</a>
+</div>

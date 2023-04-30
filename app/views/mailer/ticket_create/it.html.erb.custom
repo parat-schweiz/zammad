@@ -1,0 +1,15 @@
+Nuovo ticket
+
+<div>Buongiorno #{recipient.firstname},</div>
+<br>
+<div>Un nuovo ticket è stato creato da "<b>##{current_user.longname}</b>".</div>.
+<br>
+<div>
+Gruppo: #{ticket.group.name}<br>
+Proprietario: #{ticket.owner.fullname}<br>
+Stato: #{t(ticket.state.name)}<br>
+</div>
+<br>
+<div>
+  <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}" target="zammad_app">Visualizza su #{config.product_name}</a>
+</div>
