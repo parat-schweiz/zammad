@@ -1,4 +1,4 @@
-class Oauth2Database < OmniAuth::Strategies::OAuth2
+class OmniAuth::Strategies::Oauth2Database < OmniAuth::Strategies::OAuth2
   option :name, 'oauth2'
 
   def initialize(app, *args, &block)

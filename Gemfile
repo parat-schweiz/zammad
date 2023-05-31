@@ -93,6 +93,7 @@ end
 # authentication - provider
 gem 'doorkeeper'
 gem 'oauth2'
+gem 'omniauth-oauth2'
 
 # authentication - third party
 gem 'omniauth-rails_csrf_protection'
